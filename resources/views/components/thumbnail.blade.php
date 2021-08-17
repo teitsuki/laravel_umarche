@@ -1,4 +1,3 @@
-
 @php
 if ($type === 'shops') {
     $path = 'storage/shops/';
