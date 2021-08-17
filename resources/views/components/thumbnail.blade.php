@@ -8,7 +8,7 @@ if ($type === 'products') {
 }
 @endphp
 
-@endphp<div>
+<div>
     @if (empty($filename))
     <img src="{{ asset('images/no_image.jpg') }}">
     @else
