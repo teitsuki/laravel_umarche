@@ -20,11 +20,11 @@ use App\Http\Controllers\User\ItemController;
 Route::get('/', function () {
     return view('user.welcome');
 });
-
 Route::middleware('auth:users')->group(function () {
-        Route::get('/', [ItemController::class, 'index'])->name('items.index');
-        Route::get('edit/{shop}', [ShopController::class, 'edit'])->name('shops.edit');
-        Route::post('update/{shop}', [ShopController::class, 'update'])->name('shops.update');
+    Route::get('/', [ItemController::class, 'index'])->name('items.index');
+    Route::get('show/{item}', [ItemController::class, 'show'])->name('items.show');
+    // Route::get('edit/{shop}', [ShopController::class, 'edit'])->name('shops.edit');
+    // Route::post('update/{shop}', [ShopController::class, 'update'])->name('shops.update');
 });
 
 // Route::get('/dashboard', function () {
