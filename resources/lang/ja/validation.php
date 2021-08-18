@@ -132,5 +132,6 @@ return [
         'name' =>'名前',
         'email' => 'メールアドレス',
         'password' => 'パスワード',
+        'quantity' => '数量',
     ],
 ];
